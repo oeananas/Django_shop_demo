@@ -2,7 +2,8 @@
 {% load static %}
 
 {% block content %}
-<h1>Welcome to the main page!!!</h1>
+<h1 class="text-center">Welcome to the main page!!!</h1>
 <hr>
+<img src="{% static '/img/main.jpg' %}" alt="">
 <h3><a href="{% url 'products_list' %}">To products list</a></h3>
 {% endblock %}

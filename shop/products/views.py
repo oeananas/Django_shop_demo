@@ -17,7 +17,6 @@ class ProductListView(ListView):
 
     model = Product
     template_name = 'products/products_list.html'
-    paginate_by = 10  # if need pagination
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
